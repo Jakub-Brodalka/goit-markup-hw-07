@@ -70,13 +70,13 @@
       </div>
     </header>
     <main>
-      <section class="section-button section-bg">
+      <section class="hero">
         <div class="container">
-          <div class="bg">
-            <h1 class="container h1">
+          <div class="hero__bg">
+            <h1 class="hero__title">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
-            <button type="button" class="blue-button" data-modal-open>
+            <button type="button" class="hero__button" data-modal-open>
               Zamów usługę
             </button>
           </div>
@@ -84,11 +84,11 @@
       </section>
       <section class="content section">
         <div class="container">
-          <ul class="section-content header-flex">
-            <li>
-              <div class="feats-bg">
+          <ul class="horizontal-list">
+            <li class="feats-item">
+              <div class="feats-item__bg">
                 <svg
-                  class="feats-icon"
+                  class="feats-item__icon"
                   width="70"
                   height="70"
                   viewbox="0 0 70 70"
@@ -96,16 +96,16 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p class="feats-text">
+              <h3 class="feats-item__title">LOREM IPSUM</h3>
+              <p class="feats-item__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
-              <div class="feats-bg">
+            <li class="feats-item">
+              <div class="feats-item__bg">
                 <svg
-                  class="feats-icon"
+                  class="feats-item__icon"
                   width="70"
                   height="70"
                   viewbox="0 0 70 70"
@@ -113,16 +113,16 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p class="feats-text">
+              <h3 class="feats-item__title">LOREM IPSUM</h3>
+              <p class="feats-item__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
-              <div class="feats-bg">
+            <li class="feats-item">
+              <div class="feats-item__bg">
                 <svg
-                  class="feats-icon"
+                  class="feats-item__icon"
                   width="70"
                   height="70"
                   viewbox="0 0 70 70"
@@ -130,16 +130,16 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p class="feats-text">
+              <h3 class="feats-item__title">LOREM IPSUM</h3>
+              <p class="feats-item__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="feats-bg feats-bg-last">
+              <div class="feats-item__bg">
                 <svg
-                  class="feats-icon"
+                  class="feats-item__icon"
                   width="70"
                   height="70"
                   viewbox="0 0 70 70"
@@ -147,8 +147,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p class="feats-text">
+              <h3 class="feats-item__title">LOREM IPSUM</h3>
+              <p class="feats-item__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -156,36 +156,39 @@
           </ul>
         </div>
       </section>
-      <section class="whatwedo-section section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Czym się zajmujemy</h2>
-          <ul class="whatwedo-flex">
-            <li class="wwd-list-item">
+          <ul class="horizontal-list">
+            <li class="wwd-item">
               <img
+                class="wwd-item__image"
                 src="./images/w1.jpg"
                 width="370"
                 height="294"
                 alt="Aplikacje komputerowe"
               />
-              <div class="wwd-desc">Aplikacje komputerowe</div>
+              <div class="wwd-item__text">Aplikacje komputerowe</div>
             </li>
-            <li class="wwd-list-item">
+            <li class="wwd-item">
               <img
+                class="wwd-item__image"
                 src="./images/w2.jpg"
                 width="370"
                 height="294"
                 alt="Aplikacje mobilne"
               />
-              <div class="wwd-desc">Aplikacje mobilne</div>
+              <div class="wwd-item__text">Aplikacje mobilne</div>
             </li>
-            <li class="wwd-list-item">
+            <li class="wwd-item">
               <img
+                class="wwd-item__image"
                 src="./images/w3.jpg"
                 width="370"
                 height="294"
                 alt="Rozwiązania graficzne"
               />
-              <div class="wwd-desc">Rozwiązania graficzne</div>
+              <div class="wwd-item__text">Rozwiązania graficzne</div>
             </li>
           </ul>
         </div>
@@ -193,7 +196,7 @@
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Nasz zespół</h2>
-          <ul class="theteam-flex">
+          <ul class="horizontal-list">
             <li class="people">
               <figure class="piccap">
                 <img
