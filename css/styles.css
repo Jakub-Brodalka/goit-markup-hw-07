@@ -46,6 +46,14 @@ ul {
     padding-right: 15px;
 }
 
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .h1 {
     padding-top: 200px;
     max-width: 696px;
@@ -233,14 +241,6 @@ ul {
 }
 /* /loremy */
 /* wwd */
-.wwd,
-.team h2{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
-}
 
 .wwd-list-item {
     position: relative;
@@ -364,21 +364,15 @@ ul {
 }
 
 /* /Druzyna a */
-
 /* Dem deers */
-.clients-section {
-    padding-top: 94px;
-    margin-left: auto;
-    padding-bottom: 94px;
-}
 
-.list-clients {
+.clients-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.client-border {
+.clients-link__border {
     height: 92px;
     width: 170px;
     border: 1px solid #AFB1B8;
@@ -392,8 +386,8 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client a>div:hover,
-.client a>div>svg:hover {
+.clients-list__client a>div:hover,
+.clients-list__client a>div>svg:hover {
     border-color: var(--logo-color);
     fill: var(--logo-color);
 }
