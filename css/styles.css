@@ -29,18 +29,7 @@ body {
     color: var(--blk-color);
 }
 
-.header-link,
-.header-link-contact,
-.section-content,
-.h-list-contact,
-.whatwedo-flex,
-.theteam-flex,
-.buttons-flex,
-.portfolio,
-.list-clients,
-.social-links-list,
-.footer-social-links-list,
-.contact {
+ul {
     list-style: none;
 }
 
@@ -572,7 +561,13 @@ body {
 /* /futer */
 
 /* pfolio */
-.port-button {
+.pf-buttons {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.pf-buttons__button {
     background-color: #F5F4FA;
     color: var(--blk-color);
     line-height: 1.625;
@@ -587,8 +582,8 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.port-button:hover,
-.port-button:focus {
+.pf-buttons__button:hover,
+.pf-buttons__button:focus {
     background-color: var(--logo-color);
     color: #fff;
     text-decoration: none;
@@ -596,68 +591,61 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio {
+.pf-list {
     text-align: left;
     display:flex;
     justify-content: space-around;
     row-gap: 30px;
-}
-
-.portfolio li {
-    border: 1px solid #EEEEEE
-}
-
-.port-cap h3 {
-    color: var(--blk-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-}
-
-.port-cap p {
-    color: var(--gray-color); 
-    font-size: 16px;
-    line-height: 1.875;
-}
-
-.buttons-flex {
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.pfolio-flex {
-    display: flex;
     align-content: space-between;
     flex-wrap: wrap;
     margin: 0px;
 }
 
-.portfolio-card {
+.pf-card {
+    border: 1px solid #EEEEEE;
     margin: 0px;
     padding-top: 0px;
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
+.pf-card:hover,
+.pf-card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
-.pfolio-item {
+.pf-figure {
     padding: 0px;
     margin: 0;
     position: relative;
     overflow: hidden;
 }
 
-.pfolio-item:hover .port-overlay,
-.pfolio-item:focus .port-overlay {
+.pf-figure:hover .pf-overlay,
+.pf-figure:focus .pf-overlay {
     transform: translate(0%, 0%);
 }
 
+.pf-desc {
+    padding: 20px 24px;
+    position: relative;
+    z-index: 3;
+    background-color: #fff
+}
 
-.port-overlay {
+.pf-desc__title {
+    color: var(--blk-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.pf-desc__txt {
+    color: var(--gray-color); 
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+.pf-overlay {
     position: absolute;
     content: '';
     width: 100%;
@@ -670,7 +658,7 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-overlay-text {
+.pf-overlay__text {
     position: absolute;
     top: 0;
     left: 0;
@@ -680,14 +668,6 @@ body {
     line-height: 1.56;
     color: #fff;
 }
-
-.port-cap {
-    padding: 20px 24px;
-    position: relative;
-    z-index: 3;
-    background-color: #fff
-}
-
 /* pfolio */
 
 /* modal */
