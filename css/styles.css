@@ -46,7 +46,16 @@ ul {
     padding-right: 15px;
 }
 
-.section-title {
+.section--notopmargin{
+    padding-top: 0;
+}
+
+.section--graybg {
+    background-color: #F5F4FA;
+    text-align: center;
+}
+
+.section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -265,18 +274,7 @@ ul {
 /* /wwd */
 /* druzyna a  */
 
-.team {
-    background-color: #F5F4FA;
-    text-align: center;
-}
-
-.team figure{
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.people {
+.peeps {
     display: flex;
     margin: 0;
     margin-block-start: 0;
@@ -286,11 +284,14 @@ ul {
     justify-content: space-around;
 }
 
-.piccap {
+.peeps__figure {
     margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.piccap h3{
+.peeps__text{
     color: var(--blk-color);
     font-weight: 500;
     font-size: 16px;
@@ -298,10 +299,8 @@ ul {
     margin-top: 30px;
 }
 
-.piccap p{
+.peeps__text--gray{
     color: var(--gray-color);
-    font-size: 16px;
-    line-height: 1.17;
     margin-top: 10px;
     margin-bottom: 30px;
 }
