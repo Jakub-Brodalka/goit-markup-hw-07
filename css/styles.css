@@ -71,6 +71,74 @@ ul {
 
 
 /* /zmienne i ogolne */
+
+/* sociale */
+.social-links {
+    margin-bottom: 18px;
+}
+
+.social-links--footer {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.social-links__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.social-links__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.social-links__list--footer {
+    justify-content: space-between;
+    width: 206px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.social-links__link:hover .social-links__bg {
+    background-color: var(--logo-color);
+}
+
+.social-links__link:hover .social-links__icon {
+    fill: #fff;
+}
+
+.social-links__bg {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links__icon {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links__icon--white {
+    fill: #fff;
+}
+
+/* /sociale */
 /* heder */
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -305,46 +373,6 @@ ul {
     margin-bottom: 30px;
 }
 
-.social-links {
-    margin-bottom: 18px;
-}
-
-.social-links__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 32px;
-    padding-left: 32px;
-}
-
-.social-links__link:hover .social-links__bg {
-    background-color: var(--logo-color);
-}
-
-.social-links__link:hover .social-links__icon {
-    fill: #fff;
-}
-
-.social-links__bg {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links__icon {
-    fill: #AFB1B8;
-    width: 20px;
-    height: 20px;
-    margin: 12px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* /Druzyna a */
 /* Dem deers */
 
@@ -477,61 +505,6 @@ ul {
 .footer-divs {
     display: flex;
     justify-content: space-between;
-}
-
-.icon {
-    fill: #AFB1B8;
-    width: 20px;
-    height: 20px;
-    margin: 12px;
-}
-
-.footer-icon {
-    fill: #fff;
-    width: 20px;
-    height: 20px;
-    margin: 12px;
-}
-
-.footer-icon-bg {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-links-container {
-    margin-left: 70px;
-    margin-top: 12px;
-}
-
-.footer-social-links-list {
-    width: 206px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 0px;
-}
-
-.footer-icon-bg {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-link a>div:hover,
-.footer-social-link a>div>svg:hover {
-    background-color: var(--logo-color);
-    fill: #fff;
-}
-
-.social-header {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 20px;
 }
 
 /* /futer */
