@@ -21,7 +21,7 @@
       <div class="container header-flex">
         <nav class="nav-flex">
           <a href="./index.html" class="logo"
-            ><span class="logo-blue">Web</span><span>Studio</span></a
+            ><span class="logo--blue">Web</span><span>Studio</span></a
           >
           <ul class="header-link h-list-flex">
             <li class="whereami">
@@ -595,26 +595,32 @@
       </section>
     </main>
     <footer class="footer section">
-      <div class="container footer-divs">
-        <div class="footer-left">
+      <div class="container footer-div">
+        <div>
           <a href="./index.html" class="logo"
-            ><span class="logo-blue">Web</span
-            ><span class="logo-down">Studio</span></a
+            ><span class="logo--blue">Web</span
+            ><span class="logo--down">Studio</span></a
           >
-          <ul class="contact footer-contact">
+          <ul class="footer-list">
             <li>
-              <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+              <address class="footer-list__adress">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </address>
             </li>
-            <li class="list-footer-links">
-              <a href="mailto:info@example.com">info@example.com</a>
+            <li>
+              <a class="footer-list__link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
-            <li class="list-footer-links">
-              <a href="tel:+48111111111">+48 111 111 111</a>
+            <li>
+              <a class="footer-list__link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
             </li>
           </ul>
         </div>
         <div class=".social-links .social-links--footer">
-          <h3 class="social-links__title">Dołącz do nas</h3>
+          <h3 class="footer__title">Dołącz do nas</h3>
           <ul class="social-links__list social-links__list--footer">
             <li class="social-links__link">
               <a href="https://www.instagram.com" class="social-links-link">
@@ -674,21 +680,21 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter">
+        <div class="footer-newsletter">
           <form name="newsletter-signup">
-            <h3 class="social-header">zapisz się do newslettera</h3>
-            <div class="news-form">
+            <h3 class="footer__title">zapisz się do newslettera</h3>
+            <div class="newsletter__form">
               <input
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 required
-                class="news-mail-inp"
+                class="input__mail"
               />
-              <button type="submit" class="signup-btn">
+              <button type="submit" class="btn__signup">
                 Zapisz się
                 <svg
-                  class="sub-icon"
+                  class="btn__icon"
                   width="24"
                   height="24"
                   viewbox="0 0 24 24"
