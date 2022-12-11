@@ -2,7 +2,7 @@
 :root {
     --logo-color: #2196F3;
     --bg-color: #2F303A;
-    --gray-color:#757575;
+    --gray-color: #757575;
     --blk-color: #212121;
 }
 
@@ -46,7 +46,7 @@ ul {
     padding-right: 15px;
 }
 
-.section--notopmargin{
+.section--notopmargin {
     padding-top: 0;
 }
 
@@ -180,11 +180,11 @@ ul {
 .list-flex {
     display: flex;
     margin-left: 93px;
-    position:relative;
+    position: relative;
     flex-direction: row;
 }
 
-.list__nav{
+.list__nav {
     background-color: #fff;
     font-weight: 500;
     text-decoration: none;
@@ -240,9 +240,9 @@ ul {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url('../images/bg.jpg');
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -257,6 +257,7 @@ ul {
     font-weight: 900;
     letter-spacing: 0.06em
 }
+
 .hero__button {
     background-color: var(--logo-color);
     color: #fff;
@@ -337,7 +338,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.peeps__text{
+.peeps__text {
     color: var(--blk-color);
     font-weight: 500;
     font-size: 16px;
@@ -345,7 +346,7 @@ ul {
     margin-top: 30px;
 }
 
-.peeps__text--gray{
+.peeps__text--gray {
     color: var(--gray-color);
     margin-top: 10px;
     margin-bottom: 30px;
@@ -379,10 +380,11 @@ ul {
     border-color: var(--logo-color);
     fill: var(--logo-color);
 }
+
 /* /dem deers */
 
 /* futer */
-.footer{
+.footer {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -407,7 +409,7 @@ ul {
     line-height: 24px;
 }
 
-.footer-list__link{
+.footer-list__link {
     color: rgba(255, 255, 255, 0.6);
     line-height: 24px;
     text-decoration: none;
@@ -503,7 +505,7 @@ ul {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+}
 
 .pf-buttons__button:hover,
 .pf-buttons__button:focus {
@@ -516,7 +518,7 @@ ul {
 
 .pf-list {
     text-align: left;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     row-gap: 30px;
     align-content: space-between;
@@ -563,7 +565,7 @@ ul {
 }
 
 .pf-desc__txt {
-    color: var(--gray-color); 
+    color: var(--gray-color);
     font-size: 16px;
     line-height: 1.875;
 }
@@ -591,6 +593,7 @@ ul {
     line-height: 1.56;
     color: #fff;
 }
+
 /* pfolio */
 
 /* modal */
@@ -646,7 +649,7 @@ ul {
     transform: translate(-50%, -50%) scale(0.50);
 }
 
-.modal__input{
+.modal__input {
     width: 448px;
     height: 38px;
     padding-left: 40px;
@@ -680,11 +683,11 @@ ul {
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color:var(--blk-color);
+    color: var(--blk-color);
 }
 
 .modal__label {
-    position:relative;
+    position: relative;
 }
 
 .modal__tldr {
@@ -710,15 +713,15 @@ ul {
 }
 
 .modal__icon {
-    position:absolute;
-    left:10px;
-    top:32px;
+    position: absolute;
+    left: 10px;
+    top: 32px;
     width: 18px;
     height: 18px;
     fill: var(--blk-color)
 }
 
-.modal__checkbox{
+.modal__checkbox {
     appearance: none;
     margin-right: 7.75px;
 }
@@ -727,15 +730,15 @@ ul {
     position: absolute;
     top: 4px;
     left: -23px;
-    content:"";
-    display:block;
+    content: "";
+    display: block;
     height: 16px;
     width: 16px;
     border-radius: 3px;
     border: 2px solid rgba(21, 21, 21, 0.9);
 }
 
-.modal__checkbox:checked + .modal__tldr::before {
+.modal__checkbox:checked+.modal__tldr::before {
     background-color: var(--logo-color);
     border: none;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='21' viewBox='0 0 18 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.666656' width='17.7143' height='20' rx='2' fill='%232196F3'/%3E%3Cpath d='M7.19174 14.2633L4.38 11.033L4.30484 10.9467L4.22938 11.0328L3.24623 12.1543L3.18865 12.22L3.246 12.2859L7.11628 16.7323L7.19171 16.819L7.26713 16.7323L15.5754 7.18721L15.6326 7.12155L15.5754 7.0559L14.5992 5.93435L14.5238 5.84773L14.4484 5.93431L7.19174 14.2633Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
@@ -747,7 +750,7 @@ ul {
 }
 
 .modal__secondflex {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
